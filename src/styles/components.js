@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { above } from "./index"
+import styled from "styled-components";
+import { above } from "./index";
 
 export const colors = {
   green: "#98ca3f",
@@ -8,7 +8,7 @@ export const colors = {
   darkBlue: "#1c3643",
   lightBlue: "#1e5372",
   softGray: "#f6f8f9",
-}
+};
 
 export const StyledHeader = styled.header`
   background-image: linear-gradient(
@@ -58,7 +58,7 @@ export const StyledHeader = styled.header`
       font-size: 0.8rem;
     }
   `}
-`
+`;
 export const StyledJumbo = styled.div`
   display: flex;
   align-items: center;
@@ -142,7 +142,7 @@ export const StyledJumbo = styled.div`
     `}
   };
 
-`
+`;
 
 export const StyledProducts = styled.div`
   background-color: ${colors.softGray};
@@ -206,7 +206,7 @@ export const StyledProducts = styled.div`
       padding: 0 10rem;
     `};
   }
-`
+`;
 
 export const StyledProductDetail = styled.div`
   padding: 1rem;
@@ -261,7 +261,7 @@ export const StyledProductDetail = styled.div`
     height: 82vh;
     padding: 2rem 10rem;
   `}
-`
+`;
 
 export const StyledCart = styled.div`
   padding: 1rem;
@@ -302,7 +302,7 @@ export const StyledCart = styled.div`
   ${above.large`
     padding: 5rem 10rem;
   `}
-`
+`;
 
 export const MenuItem = styled.li`
   margin: 0;
@@ -326,7 +326,7 @@ export const MenuItem = styled.li`
       width: 0.7rem;
     }
   `}
-`
+`;
 
 export const Footer = styled.footer`
   background-color: ${colors.darkBlue};
@@ -342,7 +342,7 @@ export const Footer = styled.footer`
     margin-left: 0.3rem;
     text-decoration: none;
   }
-`
+`;
 
 export const Tag = styled.span`
   padding: 0.3rem 1.5rem;
@@ -351,7 +351,7 @@ export const Tag = styled.span`
   margin: 0.5rem 0;
   color: white;
   border-radius: 5px;
-`
+`;
 
 export const SizeButton = styled.button`
   padding: calc(0.4rem + 1px);
@@ -366,13 +366,13 @@ export const SizeButton = styled.button`
   &:hover {
     transform: scale(1.2);
   }
-`
+`;
 
 export const QtyButton = styled.button`
   padding: 0.4rem;
   background-color: transparent;
   border: 2px solid rgba(0, 0, 0, 0.1);
-`
+`;
 export const QtySelect = styled.div`
   display: flex;
   margin: 0.6rem 0;
@@ -397,7 +397,7 @@ export const QtySelect = styled.div`
     max-width: 40px;
     max-height: 40px;
   }
-`
+`;
 export const SizeSelect = styled.div`
   display: grid;
   width: 10rem;
@@ -405,10 +405,10 @@ export const SizeSelect = styled.div`
   grid-gap: 8px;
   font-size: 0.8rem;
   margin-top: 0.6rem;
-  button:nth-child(${props => props.selected}) {
+  button:nth-child(${(props) => props.selected}) {
     border: 2px solid rgba(0, 0, 0, 0.3);
   }
-`
+`;
 export const Button = styled.button`
   cursor: pointer;
   background-color: ${({ type }) =>
@@ -431,7 +431,7 @@ export const Button = styled.button`
     border-color: ${colors.gray};
     cursor: not-allowed;
   }
-`
+`;
 
 export const SelectStars = styled.div`
   span {
@@ -439,10 +439,10 @@ export const SelectStars = styled.div`
     color: ${colors.gray};
     cursor: pointer;
   }
-  span:nth-child(-n + ${props => props.selected}) {
+  span:nth-child(-n + ${(props) => props.selected}) {
     color: ${colors.orange};
   }
-`
+`;
 export const Purchase = styled.div`
   width: 100vw;
   height: calc(100vh - 4.5rem - 101px);
@@ -460,7 +460,7 @@ export const Purchase = styled.div`
   span {
     font-size: 2rem;
   }
-`
+`;
 
 export const Content = styled.div`
   ${above.medium`
@@ -469,4 +469,4 @@ export const Content = styled.div`
   ${above.large`
     padding-top: 4.5rem;
   `}
-`
+`;
