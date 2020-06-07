@@ -11,7 +11,7 @@ export default function cancelar() {
         <h2>Lo sentimos</h2>
         <p>Estará todo el tiempo disponible para tí</p>
         <p>¡ Te esperamos de vuelta, nunca pares de aprender !</p>
-        <span rol="img" aria-label="emoji">
+        <span role="img" aria-label="emoji">
           💔
         </span>
         <Link to="/">
